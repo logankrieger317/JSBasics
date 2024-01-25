@@ -1,7 +1,7 @@
 // Get modal and button
-var modal = document.getElementById("modal");
-var btn = document.querySelector(".makeOfferBtn");
-var close = document.querySelector(".close");
+let modal = document.getElementById("modal");
+let btn = document.querySelector(".makeOfferBtn");
+let close = document.querySelector(".close");
 
 // Open modal when button clicked
 btn.onclick = function() {
@@ -22,12 +22,3 @@ window.onclick = function(event) {
   }
 }
 
-// Nav Bar 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
