@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Austin Real Estate Company</title>
+  <link rel="stylesheet" type="text/css" href="jsBasics.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Austin Real Estate Company</h1>
+    <div class="topnav" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Find Your Dream Home in Austin</h2>
+    <p>Welcome to our real estate company! We specialize in helping people buy, sell, and rent properties in the Austin, Texas area. Take a look at some of our featured listings below.</p>
+
+    <div class="listings">
+      <div class="listing">
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg">
+        <h3>123 Main St</h3>
+        <p>4 Bed, 3 Bath House in Downtown Austin</p>
+        <p>$850,000</p>
+      </div>
+
+      <div class="listing">
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-7.jpg">
+        <h3>456 Oak Ave</h3>
+        <p>3 Bed, 2 Bath Condo in South Austin</p>
+        <p>$500,000</p>
+      </div>
+
+      <div class="listing">
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-11.jpg">
+        <h3>789 Elm St</h3> 
+        <p>2 Bed, 1 Bath Bungalow in East Austin</p>
+        <p>$300,000</p>
+      </div>
+    </div>
+
+<div id="modal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Make an Offer</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="homeBuying"> Ready To Buy a Home?</label>
+      <input type="radio" id="ready" name="homeBuying">
+      <label for="ready">Yes</label>
+      <input type="radio" id="notReady" name="homeBuying">
+      <label for="notReady">No</label><br>
+      <label for="offerPrice">Offer Price: $</label>
+      <input type="number" id="offerPrice" name="offerPrice"><br>
+
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</div>
+
+<!-- Add button --> 
+<button class="makeOfferBtn">Make Offer</button>
+
+    <p>Contact us today to schedule a tour or to learn more about buying, selling, or renting with our experienced real estate agents!</p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Austin Real Estate Company</p>
+  </footer>
+
+  <script src="modal.js"></script>
+
+</body>
+</html>
